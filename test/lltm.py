@@ -89,7 +89,7 @@ class LLTM(torch.nn.Module):
             weight.data.uniform_(-stdv, +stdv)
 
     def forward(
-        self, input: torch.Tensor, state: torch.Tensor
+        self, input: torch.Tensor, state: tuple[torch.Tensor, torch.Tensor]
     ) -> tuple[torch.Tensor, torch.Tensor]:
         match self.version:
             case "cpp":
