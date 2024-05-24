@@ -1,0 +1,16 @@
+name: test_pytorch
+channels:
+  - pytorch-nightly
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.4
+  - scikit-build
+  - ipython
+  - pip
+  - pip:
+    - -e .

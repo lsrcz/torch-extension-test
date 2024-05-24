@@ -1,0 +1,7 @@
+flags
+.cache/
+*.so
+*.egg-info/
+build/
+.clangd
+.eggs/
